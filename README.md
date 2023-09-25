@@ -1,4 +1,4 @@
-[![Issues](https://img.shields.io/github/issues-raw/NewMaxT/OpenCV-Face-Tracking?label=Issues&style=for-the-badge)]()
+[![Issues](https://img.shields.io/github/issues-raw/NewMaxT/vitalsMonitor?label=Issues&style=for-the-badge)]()
 
 /!\ WIP
 
@@ -27,6 +27,10 @@ For security purposes, the software will only be able to read selected, wireless
 - Reliable and Open-Source.
 - Runs on cheap embedded hardware. (e.g. Raspberry Pi, Must have at least BLE capabilities)
 - Easy configuration (GUI Configuration)
+
+## Compatible Hardware
+
+- Pulsar H10, [Buy now](https://www.polar.com/ca-fr/sensors/h10)
 
 ### TODO LIST :pushpin:
 
