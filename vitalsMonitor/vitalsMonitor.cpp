@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Sensors.h"
 
 int main()
 {
@@ -14,23 +15,15 @@ int main()
         /* MANAGE HARDWARE */
 
         /* CODE HERE */
+        bool conMethod[3] = {true, false, false};
+        
+        Sensors hdw_Sensors(true, false, false, conMethod);
 
-        if (true) {
+        if (hdw_Sensors.ready) {
             std::cout << "HARDWARE API " << "\033[1;32m" << "OK" << "\033[1;0m\n";
         }
         else {
-            throw std::runtime_error("HARDWARE API STARTUP FAILURE");
-        }
-
-        /* MANAGE BLUETOOTH LOW ENERGY */
-
-        /* CODE HERE */
-
-        if (true) {
-            std::cout << "BLE " << "\033[1;32m" << "OK" << "\033[1;0m\n";
-        }
-        else {
-            throw std::runtime_error("BLE STARTUP FAILURE");
+            throw std::runtime_error("HARDWARE STARTUP NOT READY");
         }
 
         /* MANAGE THREADS AND ASYNC FUNCTIONS */
