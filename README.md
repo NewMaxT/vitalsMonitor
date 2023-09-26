@@ -1,4 +1,5 @@
 [![Issues](https://img.shields.io/github/issues-raw/NewMaxT/vitalsMonitor?label=Issues&style=for-the-badge)]()
+[![Build Status](https://img.shields.io/github/actions/workflow/status/NewMaxT/vitalsMonitor/msbuild.yml?style=for-the-badge)]()
 
 /!\ WIP
 
