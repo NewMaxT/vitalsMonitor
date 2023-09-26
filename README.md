@@ -32,6 +32,12 @@ For security purposes, the software will only be able to read selected, wireless
 
 - Pulsar H10, [Buy now](https://www.polar.com/ca-fr/sensors/h10)
 
+## Compatible Software
+
+- Windows 11, WIP
+- Linux, WIP
+- Mac, Not Planned
+
 ### TODO LIST :pushpin:
 
 ```markdown
