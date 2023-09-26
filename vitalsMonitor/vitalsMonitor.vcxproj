@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Sensors.cpp" />
     <ClCompile Include="vitalsMonitor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sensors.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
