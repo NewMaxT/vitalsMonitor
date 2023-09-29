@@ -28,6 +28,7 @@ For security purposes, the software will only be able to read selected, wireless
 - Reliable and Open-Source.
 - Runs on cheap embedded hardware. (e.g. Raspberry Pi, Must have at least BLE capabilities)
 - Easy configuration (GUI Configuration)
+- Live Console to monitor issues (can be disabled, requires more computing)
 
 ## Compatible Hardware
 
