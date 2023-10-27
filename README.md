@@ -6,8 +6,9 @@
 # ECG, SpO2, Blood Pressure and Respiratory Rate monitoring software
 
 Reliable C++ Software that can monitor and save data locally of you vitals constants.
-For security purposes, the software will only be able to read selected, wireless sensors hardware (e.g. Polar H10) 
-()
+For security purposes, the software will only be able to read selected wireless sensors hardware (e.g. Polar H10) 
+
+Built with SDL2, C++ and Visual Compiler
 
 ## Repo Structure :open_file_folder:
 
@@ -51,7 +52,7 @@ For security purposes, the software will only be able to read selected, wireless
 - [ ] Heart Rate (BPM) and EKG/ECG (mV)
 - [ ] SpO2 (%)
 - [ ] Blood Pressure (NIBP/mmHg)
-- [ ] Skin Temperature (°C or °F)
+- [ ] Skin Temperature (Â°C or Â°F)
 - [ ] Respiratory Rate (Dimensionless Quantity, unitless)
 ```
 
@@ -85,7 +86,7 @@ v0 - 2023-10-26
 
  - [Raspberry Docs](https://www.raspberrypi.com/documentation/)
  - [BLE on Windows](https://github.com/urish/win-ble-cpp)
- - [FLTK Gui Library](https://www.fltk.org/documentation.php)
+ - [SDL2 Documentation](https://wiki.libsdl.org/SDL2/FrontPage)
 
 ## Tools used
 <div width="100%">
