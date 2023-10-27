@@ -36,8 +36,6 @@ int main()
         else {
             throw std::runtime_error("THREADS STARTUP FAILURE");
         }
-
-
     }
     catch (const std::exception& exc)
     {
@@ -48,15 +46,9 @@ int main()
         throw exc;
     }
 
-
     std::cout << "WAITING FOR SENSORS\n\n";
-
-
     std::cout << "\033[7;32mSTARTED UP\033[4;0m\n";
-
     std::cout << "\033[1;32mSTARTING GUI\033[1;0m\n";
-
-
 }
 
 
