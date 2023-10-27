@@ -104,10 +104,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\INCL\INCLUDE</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\INCL\LIB\SDL</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);E:\INCL\LIB\SDL\SDL2.lib;E:\INCL\LIB\SDL\SDL2main.lib;E:\INCL\LIB\SDL\SDL2_ttf.lib;</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -132,6 +136,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sensors.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\INCL\INCLUDE\SDL\SDL2.dll" />
+    <None Include="..\..\..\..\INCL\LIB\SDL\SDL2_ttf.dll" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

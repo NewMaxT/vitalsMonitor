@@ -27,4 +27,8 @@
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\INCL\INCLUDE\SDL\SDL2.dll" />
+    <None Include="..\..\..\..\INCL\LIB\SDL\SDL2_ttf.dll" />
+  </ItemGroup>
 </Project>
