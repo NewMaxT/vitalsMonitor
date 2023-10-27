@@ -8,23 +8,19 @@
 	{
 	private:
 		/*
-		var: _rawData (Array short int)
-		use case: Stores Raw Data from sensors
-
-		[0] = HRM Sensor raw value, [1] = O2Sat Sensor raw value, [2] = RR Sensor raw value
-		*/
-
+		 * @brief Stores Raw Data from sensors
+		 * var: _rawData (Array short int)
+		 * [0] = HRM Sensor raw value, [1] = O2Sat Sensor raw value, [2] = RR Sensor raw value
+		 */
 		short int _rawData[3];
 
+
 		/*
-		 function: init_BLE()
-		 use case: Start Bluetooth Low Energy Service
-
-		 Use the interface to make a BLE API Object
-		 Windows BLE API: https://github.com/urish/win-ble-cpp/tree/master
-		 Linux BLE API:
-		*/
-
+		 * @brief Start Bluetooth Low Energy Service
+		 *
+		 * Use the interface to make a BLE API Object
+		 * Windows BLE API: https://github.com/urish/win-ble-cpp/tree/master
+		 */
 		void init_BLE();
 
 
