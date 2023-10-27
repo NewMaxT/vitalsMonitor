@@ -48,7 +48,7 @@ Built with SDL2, C++ and Visual Compiler
 ```markdown
 - [ ] Connection with sensors (see Compatible Hardware section)
 - [ ] Hardware Testing (Raspberry Pi 3/4 with FHD screen, basic computer)
-- [ ] GUI Interface (Data Monitoring and Settings)
+- [~] GUI Interface (Data Monitoring and Settings)
 - [ ] Heart Rate (BPM) and EKG/ECG (mV)
 - [ ] SpO2 (%)
 - [ ] Blood Pressure (NIBP/mmHg)
