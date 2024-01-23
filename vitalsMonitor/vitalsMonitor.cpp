@@ -98,7 +98,7 @@ struct drawMethods {
 * @throws HARDWARE_STARTUP_NOT_READY is thrown if the startup can't connect to the hardware in time
 * @throws THREADS_STARTUP_FAILURE is thrown if the startup procedure fails
 * @see Sensors Class
-* @return Returns an object that handles the hardware data stream.
+* @return Returns an object that handles the hardware data stream if connected.
 * @warning Useless for the moment
 */
 Sensors startup() {
@@ -164,11 +164,11 @@ int gui(Sensors *sensors) {
         SDL_WINDOWPOS_CENTERED,             // Y position
         SCREEN_W_SIZE,                      // Width
         SCREEN_H_SIZE,                      // Height
-        SDL_WINDOW_FULLSCREEN_DESKTOP       // Flags
+        SDL_WINDOW_FULLSCREEN_DESKTOP       // Puts in fullscreen the window
     );
 
     if (!window) {
-        // Handle window error
+        // Handle window creation error
         std::cout << "\033[7;31m" << "FATAL: " << "(GUI) SDL WINDOW CREATION FAILURE" << "\033[1;0m\n\n";
         TTF_Quit();
         SDL_Quit();
@@ -183,7 +183,7 @@ int gui(Sensors *sensors) {
         SDL_DestroyWindow(window);
         TTF_Quit();
         SDL_Quit();
-        return 1;
+        return 1; //TODO: Manage throws and exit codes
     }
 
 
@@ -275,14 +275,16 @@ int gui(Sensors *sensors) {
             RR->renderGraph(renderer);
             
             // Delay to control frame rate
-            SDL_Delay(8);
+            // TODO: Find a good delay to balance performance and refresh rate
+            SDL_Delay(16);
 
             // Show frame
             SDL_RenderPresent(renderer);
         }
     }
 
-    // Destroy font, renderer, window, and quit SDL_ttf and SDL
+    // Destroy the objects : font, renderer, window
+    // and quit SDL_ttf and SDL
     TTF_CloseFont(font);
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
